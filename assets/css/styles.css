@@ -201,3 +201,15 @@ input:active {
     background-color: #3d3939;
     color: antiquewhite;
 }
+
+.contact span {
+    padding: 20px 0 0 7px;
+}
+
+.contact span.online {
+    color: #07a84a;
+}
+
+.contact span.offline {
+    color: #c00707;
+}
