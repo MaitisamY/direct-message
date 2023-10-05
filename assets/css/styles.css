@@ -1,0 +1,203 @@
+body {
+    background-color: antiquewhite;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.msg-box {
+    display: block;
+    align-self: center;
+    width: 900px;
+    height: 600px;
+    -webkit-box-shadow: 14px 14px 0px -3px rgba(61,57,57,1);
+    -moz-box-shadow: 14px 14px 0px -3px rgba(61,57,57,1);
+    box-shadow: 14px 14px 0px -3px rgba(61,57,57,1);
+    border-top: 2px solid #3d3939;
+    border-right: 2px solid #3d3939;
+    border-bottom: 2px solid #3d3939;
+    border-left: 2px solid #3d3939;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 100%;
+    margin: 0;
+    padding: 0;
+    justify-items: center;
+    align-items: center;
+    border-bottom: 2px solid #3d3939;
+}
+
+header a {
+    padding: 5px 15px 5px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #3d3939;
+    font-family: 'Gabarito', cursive;
+}
+
+header a:hover,
+header a:focus,
+header a:active {
+    padding: 5px 15px 5px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+}
+
+header p {
+    padding: 5px 15px 5px 15px;
+    color: #07a84a;
+    background-color: transparent;
+    border: none;
+    font-family: 'Gabarito', cursive;
+}
+
+header h1 {
+    padding: 5px 15px 5px 15px;
+    font-size: 25px;
+    font-family: 'Gabarito', cursive;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 15% 15% 15% 25% 15% 15%;
+    height: 100%;
+    font-family: 'Gabarito', cursive;
+}
+
+.conversation-with {
+    display: grid;
+    grid-template-columns: 10% 70% 10% 10%;
+    grid-template-rows: 100%;
+    margin: 0;
+    padding: 0;
+    justify-items: start;
+    align-items: start;
+    justify-content: start;
+    align-content: start;
+    padding: 10px 20px 10px 20px;
+}
+
+.conversation-with img {
+    border-radius: 50px 50px;
+}
+
+.conversation-with p {
+    text-align: left;
+    font-family: 'Gabarito', cursive;
+    font-size: larger;
+    padding: 0 15px 0 15px;
+    color: #3d3939;
+}
+
+.conversation-with button {
+    padding: 7px 10px 5px 10px;
+    color: #3d3939;
+    background-color: transparent;
+    border: 2px solid #3d3939;
+    border-radius: 5px 5px;
+    font-size: large;
+    font-family: 'Gabarito', cursive;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.conversation-with button:hover,
+.conversation-with button:focus,
+.conversation-with button:active {
+    color: #000;
+    background-color: transparent;
+}
+
+.main-panel {
+    grid-area: 1 / 2 / 5 / 2;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #cec8c8;
+}
+
+.start-conversation {
+    grid-area: 3 / 2 / 3 / 2;
+    text-align: center;
+    font-size: larger;
+    color: #cfc9c9;
+}
+
+.text-area {
+    grid-area: 5 / 2 / 5 / 2;
+    padding: 25px 25px;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    align-content: space-evenly;
+}
+
+input,
+input:hover,
+input:focus,
+input:active {
+    padding: 5px 10px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-family: 'Gabarito', cursive;
+    color: #3d3939;
+    font-size: larger;
+    min-width: 70%;
+}
+
+.attachments {
+    color: #3d3939;
+    padding: 0 5px 0 5px;
+}
+
+.side-panel {
+    grid-area: 1 / 1 / 6 / 1;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid #cec8c8;
+}
+
+.search-box {
+    grid-area: 2 / 1 / 2 / 1;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #cec8c8;
+}
+
+.search-box input[type=search] {
+    padding: 15px 10px;
+    font-size: 15px;
+    background-color: transparent;
+}
+
+.contact {
+    grid-area: 3 / 1 / 3 / 1;
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #cec8c8;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact img {
+    object-fit: cover;
+    border-radius: 50px 50px;
+    margin: 5px 0 5px 10px;
+}
+
+.contact.active {
+    background-color: #3d3939;
+    color: antiquewhite;
+}
